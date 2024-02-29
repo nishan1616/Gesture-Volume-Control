@@ -49,9 +49,9 @@ while True:
         #Hand range: 25-220
         #Volume range: -65-0
 
-        vol = np.interp(length,[25,220],[minvol,maxvol])
-        volbar = np.interp(length,[25,220],[400,150])
-        volper = np.interp(length, [25,220],[0,100])
+        vol = np.interp(length,[25,200],[minvol,maxvol])
+        volbar = np.interp(length,[25,200],[400,150])
+        volper = np.interp(length, [25,200],[0,100])
         print(vol)
         volume.SetMasterVolumeLevel(vol, None)
         if length < 25 :
